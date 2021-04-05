@@ -1,0 +1,76 @@
+.restaurants
+{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 100%;
+ background: $color-cinq;
+
+      &__bund
+  {
+   display: flex;
+   flex-direction: column;
+   width: 85%;
+   margin: 7.5%;
+   margin-right: 7.5%;
+   box-shadow: 2px 2px 5px rgb(210 210 210);
+   border-radius: 5% 5% 5% 5%;
+     
+      &__img
+      {
+          width: 100%;
+          border-radius: 5% 5% 0% 0%;
+          object-fit: cover;
+          height: 200px;
+      }
+  }
+}
+
+.legende
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    border-radius: 0% 0% 5% 5%;
+       &__leglogo :hover
+    {
+      color: radial-gradient(circle, lighten($color-primary, 5) 0%, darken($color-secondary, 10) 100%);;
+    }
+}
+
+.legtxt
+{
+    &__legt1
+    {
+
+    }
+    &__legt2
+    {
+        margin-top: 5px;
+    }
+}
+
+/*menu à la francaise*/
+
+.conteneur
+{
+&__title
+{
+    margin-left: 20px;
+    margin-bottom: 17px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid green;
+    width: 8%;
+}
+&__carte
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+}
