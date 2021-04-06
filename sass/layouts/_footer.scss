@@ -1,22 +1,33 @@
+.logof
+{
+    padding-left: 20px;
+    margin-top: 10px;
+}
 .foot
 {
     display: flex;
     flex-direction: column;
     align-items: baseline;
     width: 100%;
-    padding-left: 20px;
     background: $color_huit;
     color: white;
-        &__li{
+        &__ul
+    {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline; 
+    padding-left: 20px;
+    }
+        &__li
+    {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
     margin-bottom: 10px;
-        &__footxt1
-        {
-         margin-left: 8px;
-        }
-        &__footxt2
-        {
-        position: absolute;
-        margin-left: 18px;
-        }
+    &__footxt
+    {
+        margin-left: 10px;
+    }
     }
 }

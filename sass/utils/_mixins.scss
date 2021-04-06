@@ -1,2 +1,15 @@
+@mixin pc-only
+{
+    @media screen and (min-width:map-get($breakpoints,pc))
+    {
+        @content;
+    }
+}
 
-
+@mixin tb-only
+{
+    @media screen and (min-width:map-get($breakpoints,tb))
+    {
+        @content;
+    }
+}

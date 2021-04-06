@@ -9,48 +9,11 @@
     border-right: 2px solid radial-gradient($color-primary, $color-secondary);
     border-left: 2px solid radial-gradient($color-primary, $color-secondary);
     border-radius: 30px;
-    padding: 10px 15px 10px 15px;
+    padding: 15px 15px 15px 15px;
     margin-bottom: 20px;
-    background: radial-gradient(circle, lighten($color-primary, 5) 0%, darken($color-secondary, 10) 100%); 
+    background: linear-gradient(-10deg, lighten($color-primary, 5) 0%, darken($color-secondary, 10) 100%); 
 }
 
-.navbar
-{
-    
-      &__li{
-    border: 2px solid $color-cinq;
-    border-radius: 30px;
-    background: $color-cinq;
-    box-shadow: 2px 2px 5px rgb(210 210 210);
-    width: 100%;
-    margin-bottom: 20px;
-    padding-left: -5px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    
-       &__txt
-    {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-    }
-    &__nb
-    {
-    margin-right: 10px;
-    margin-left: -9px;
-    font-size: 15px;
-    border: 1px solid $color-primary;
-    border-radius: 50%;
-    padding-right: 4px;
-    padding-left: 4px;
-    background: $color-primary;
-    color: white;
-    }
- }
-}
 
 /*menu à la francaise*/
 

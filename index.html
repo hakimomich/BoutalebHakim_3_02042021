@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-599px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href=".public/css/style.css">
     <script src="https://kit.fontawesome.com/50efa1275e.js" crossorigin="anonymous"></script>
 </head>
@@ -19,22 +19,25 @@
         <aside class="rest">
         <h2 class="rest__h2">Réservez le menu qui<div class="rest__h2__b">vous convient</div></h2>
         <h3 class="rest__h3">Découvrez des restaurants d'éxeption,<div class="rest__h3__b">séléctionnés par nos soins.</div></h3>
-        <div class="buttonone" type="button">Explorer nos restaurants</div>
+        <a href="#resto"><div class="buttonone" type="button">Explorer nos restaurants</div></a>
         </aside>
         </section>
+
         <h2 class="titleb">Fonctionnement</h2>
         <nav class="navbar">
                
-            <ul>
+            <ul class="navbar__ul">
+                
                 <li class="navbar__li"><p class="navbar__li__nb">1</p><i class="fas fa-mobile-alt"></i><a class="navbar__li__txt" href="#">Choisissez un réstaurant</a></li>
                 <li class="navbar__li"><p class="navbar__li__nb">2</p><i class="fas fa-list-ul"></i><a class="navbar__li__txt" href="#">Composer votre menu</a></li>
                 <li class="navbar__li"><p class="navbar__li__nb">3</p><i class="fas fa-store"></i><a class="navbar__li__txt" href="#">Dégustez au réstaurants</a></li>
             </ul>
         </nav>
+
     </header>
-    <h2 class="titleb">Restaurants</h2>
-<section class="restaurants">
-    
+
+    <h2  id="resto" class="titleb">Restaurants</h2>
+<section class="restaurants"> 
     <div class="restaurants__bund">
         <img class="restaurants__bund__img" src=".public/img/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="img-restaurant" title="Cliquez pour agrandir"/> 
         <div class="legende">
@@ -79,15 +82,14 @@
         <div class="legende__leglogo"><i class="far fa-heart"></i></div>
         </div>
     </div>
-
 </section>
+
     <footer class="foot">
 
-        <h2 class="logof">oh my food</h2>
-
-        <ul>
-            <li class="foot__li"><i class="fas fa-utensils"></i><div class="foot__li__footxt1">Proposer un restaurant</div></li>
-            <li class="foot__li"><i class="fas fa-hands-helping"></i><div class="foot__li__footxt2">Devenir partenaire</div></li>
+    <div class="logof">oh my food</div>
+        <ul class="foot__ul">
+            <li class="foot__li"><i class="fas fa-utensils"></i><div class="foot__li__footxt">Proposer un restaurant</div></li>
+            <li class="foot__li"><i class="fas fa-hands-helping"></i><div class="foot__li__footxt">Devenir partenaire</div></li>
             <li class="foot__li"><div class="">Mentions légales</div></li>
             <li class="foot__li"><div class="">Contact</div></li>
         </ul>

@@ -18,7 +18,15 @@
     border-top: 1px solid $color-six;
     box-shadow: 1px 0 3px #D7DBDD;  
     }   
-}     
+}  
+.localisation a
+{
+  text-decoration: none;
+} 
+.titleb
+{
+    margin-left: 3%;
+}
     .rest{
     display: flex;
     flex-direction: column;
@@ -27,16 +35,34 @@
     padding-bottom: 20px;
     background: $color-cinq;
       &__h2{
+      @include tb-only
+      {
+        display: flex;
+        flex-direction: row;
+      }  
       &__b
       {
     text-align: center;
+      @include tb-only
+      {
+      margin-left: 5px;
+      }
       }
       }
       &__h3
       {
-    margin-top: auto;
+      margin-top: auto;
+      @include tb-only
+      {
+      display: flex;
+      flex-direction: row;
+      }  
       &__b{
-    text-align: center;
+      text-align: center;
+      @include tb-only
+      {
+      margin-left: 3px;
+      }
       }
       }
     }
@@ -65,6 +91,6 @@
       padding-left: 25px;
       border: 1px solid $color-cinq;
       background: $color-cinq;
-      border-radius: 10% 10% 0% 0%;
+      border-radius: 20px 20px 0px 0px;
     }
   }
