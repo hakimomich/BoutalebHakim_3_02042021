@@ -2,10 +2,13 @@
 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 &__ul
 {
+width: calc( 90% - 30px );
+margin-left: auto;
+margin-right: auto;
 padding-left: 0px;
 @include tb-only
     {
@@ -21,6 +24,7 @@ padding-left: 0px;
 }
 &__li
 {
+
 list-style-type: none;
 display: flex;
 flex-direction: row;
@@ -66,7 +70,10 @@ padding-right: 10px;
 
 }
 }    
-
+.titleb
+{
+    margin-left: 8%;
+}
 
 
 

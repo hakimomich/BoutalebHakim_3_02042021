@@ -7,4 +7,14 @@ $color-six: #D7DBDD;
 $color-sept: #BDC3C7;
 $color_huit: #4B4C4D;
 
-$breakpoints: (tb:740px, pc:990px);
+$cd-bars: #15DEA5;
+$cd-bars-inv: #0E397F;
+$size: 3vh;
+$anim-dur: 1000ms;
+$num-bars: 5;
+$anim-delay: $anim-dur / $num-bars;
+
+$anim-dura: 1800ms;
+$nb-frbtn: 9;
+
+$breakpoints: (tb:740px, pc:990px, tb2:500px);
