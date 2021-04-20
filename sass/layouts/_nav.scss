@@ -29,35 +29,37 @@ list-style-type: none;
 display: flex;
 flex-direction: row;
 align-items: center;
-border: 2px solid $color-cinq;
-border-radius: 30px;
+border-radius: 15px;
 background: $color-cinq;
 box-shadow: 2px 2px 5px rgb(210 210 210);
 width: 100%;
 margin-bottom: 20px;
-padding-left: -5px;
-padding-top: 5px;
-padding-bottom: 5px;
-padding-right: 10px;
+padding-top: 10px;
+padding-bottom: 10px;
 
+&:hover
+{
+    background-color: lighten($color-primary, 35%);
+    .navbar__li__logo
+    {
+        color: $color-primary;
+    }
+}
     @include tb-only{
         width: 25%;
     }
-    @include pc-only
-    {
-       
-    }
+
     &__txt
     {
     text-decoration: none;
     color: black;
-    font-size: 14px;
-    margin-left: 20px;
+    font-size: 15px;
+    margin-left: 30px;
     margin-right: 0px;
     }
     &__nb
     {
-    margin-right: 20px;
+    margin-right: 30px;
     margin-left: -9px;
     font-size: 15px;
     border: 1px solid $color-primary;
