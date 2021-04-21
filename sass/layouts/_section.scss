@@ -82,7 +82,15 @@ width: 20%;
         position: absolute;
         opacity: 1;          
         font-size: 22px;
-        background-color: white;
+        background-color: white;    
+        &:hover + .legende__leglogo__fas 
+        {
+        transform: scale(1);
+        opacity: 1;
+        font-size: 22px;
+        color: $color-secondary; 
+        background-color: white;  
+        }
         }
         &__test
         {
@@ -91,19 +99,8 @@ width: 20%;
     }
     
 }
-.legende__leglogo__far , .legende__leglogo__fas
-{
-    &:hover + .legende__leglogo__fas
-    {
-      
-        transform: scale(1);
-        opacity: 1;
-        font-size: 22px;
-        color: lighten($color-secondary, 10%);
-        background: white;
-        
-    }
-}
+
+
 
 .legtxt
 {
@@ -116,11 +113,16 @@ width: 20%;
 
 /*menu à la francaise*/
 
+.header i
+{
+    font-size: 18px;
+}
 .conteneur
 {
+    padding-left: 5%;
+    padding-right: 5%;
 &__title
 {
-    margin-left: 8%;
     margin-bottom: 17px;
     padding-bottom: 3px;
     border-bottom: 2px solid $cd-bars;
@@ -140,203 +142,18 @@ width: 20%;
 
 
   .frbtn__eur
-  {
+{
+    width: 15%;
     transition: transform 1000ms;
-    
-    
-   &__1
-   {
-    padding-left: 80px;
-    padding-top: 20px;
-    &__b
-   {
-    padding-left: 185px;
-    padding-top: 20px;
-   }
-   &__c
-   {
-    padding-left: 130px;
-    padding-top: 20px;
-   }
-   &__d
-   {
-    padding-left: 55px;
-    padding-top: 20px;
-   }
-   }
-   &__2
-   {
-    padding-left: 55px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 70px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 75px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 110px;
-     padding-top: 20px;
-    }
-   }
-   &__3
-   {
-    padding-left: 140px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 175px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 50px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 20px;
-     padding-top: 20px;
-    }
-   }
-   &__4
-   {
-    padding-left: 60px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 40px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 30px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 55px;
-     padding-top: 20px;
-    }
-   }
-   &__5
-   {
-    padding-left: 80px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 150px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 55px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 40px;
-     padding-top: 20px;
-    }
-   }
-   &__6
-   {
-    padding-left: 70px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 145px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 170px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 130px;
-     padding-top: 20px;
-    }
-   }
-   &__7
-   {
-    padding-left: 70px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 120px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 190px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 85px;
-     padding-top: 20px;
-    }
-   }
-   &__8
-   {
-    padding-left: 115px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 185px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 40px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 45px;
-     padding-top: 20px;
-    }
-   }
-   &__9
-   {
-    padding-left: 100px;
-    padding-top: 20px;
-    &__b
-    {
-    padding-left: 210px;
-    padding-top: 20px;  
-    }
-    &__c
-    {
-     padding-left: 50px;
-     padding-top: 20px;
-    }
-    &__d
-    {
-     padding-left: 110px;
-     padding-top: 20px;
-    }
-    &__db
-    {
-    padding-left: 80px;
-    padding-top: 20px;
-    }
-   }
+    transform: translateX(130%); 
+    text-align: center;
 } 
 
 .frbtn
 {
     &:hover > .frbtn__eur
     {
-        transform: translate(-15%);
-        
+        transform: translateX(0);
     }
 }
 
@@ -365,6 +182,8 @@ width: 20%;
    }
    &__txt
    {
+
+       width: 65%;
        padding-top: 10px;
        padding-bottom: 10px;
        padding-left: 10px;
@@ -374,7 +193,7 @@ width: 20%;
 
 .frbtn__bg
 {
-    width: 15%;
+    width: 20%;
     background-color: $cd-bars;
     border-radius: 0px 10px 10px 0px;
     transform-origin: 100% 50%;
@@ -383,13 +202,19 @@ width: 20%;
 
 }
 
+.frbtn__txt
+{
+    transition: transform 1000ms ease-out;
+    transform: scaleY(1);
+}
+
 .frbtn
 {
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   align-items: normal;
-   width: 85%;
+   align-items: center;
+   width: 100%;
    border-radius: 10px;
    background: white;
    padding: 0;
@@ -399,14 +224,20 @@ width: 20%;
    {
        transform: scaleX(1);
    }
+   &:hover > .frbtn__txt
+   {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+   }
 }
   
 i.fas.fa-check-circle
 {
 position: relative;
-left: 28%;
-line-height: 220%;
-font-size: 25px;
+left: 33%;
+line-height: 300%;
+font-size: 20px;
 color: white;
 }
 
@@ -419,11 +250,14 @@ color: white;
 }
 .frbtn
 { 
-    &__txt
+    &__txt > *
     {
 
         white-space: nowrap;
-        overflow:hidden;
+        overflow: hidden;
         text-overflow: ellipsis;
+        
     }
 }
+
+
