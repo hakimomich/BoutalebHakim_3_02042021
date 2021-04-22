@@ -67,7 +67,7 @@
       }
     }
 
-/* menu à la francaise */
+/* LES MENUS */
 
   .header
   {
@@ -121,3 +121,29 @@
       }
     }
   }
+
+  .headlog
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+  &__headl
+  {
+  width: 10%;
+  padding-left: 5%;
+  }
+
+  &__headlo
+  {
+    width: 40%;
+    padding-right: 25%;
+  }
+
+  }
+
+ .headlog i
+ {
+   color: black;
+ }
