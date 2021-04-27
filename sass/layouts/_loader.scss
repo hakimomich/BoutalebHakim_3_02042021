@@ -69,6 +69,13 @@
            }
        }
 }
+.load__bar
+{
+    &:hover
+    {
+        animation-play-state: paused;
+    }
+}
 
 @keyframes bars 
 {
