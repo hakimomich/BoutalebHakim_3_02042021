@@ -35,6 +35,9 @@
     padding-bottom: 20px;
     background: $color-cinq;
       &__h2{
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: bold; 
       @include tb-only
       {
         display: flex;
@@ -42,6 +45,9 @@
       }  
       &__b
       {
+        font-size: 20px;
+        font-weight: bold; 
+        margin-bottom: 20px;
     text-align: center;
       @include tb-only
       {
@@ -58,6 +64,7 @@
       flex-direction: row;
       }  
       &__b{
+      margin-bottom: 20px;
       text-align: center;
       @include tb-only
       {
@@ -109,7 +116,6 @@
       align-items: center;
       padding: 25px;
       padding-left: 5%;
-      border: 1px solid $color-cinq;
       background: $color-cinq;
       border-radius: 20px 20px 0px 0px;
       @include tb2-only
